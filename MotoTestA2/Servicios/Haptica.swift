@@ -14,4 +14,10 @@ enum Haptica {
     static func fallo() {
         UINotificationFeedbackGenerator().notificationOccurred(.error)
     }
+
+    /// Toque suave al marcar una respuesta en el simulacro
+    /// (ahí no se puede revelar si es acierto o fallo).
+    static func seleccion() {
+        UISelectionFeedbackGenerator().selectionChanged()
+    }
 }

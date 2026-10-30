@@ -23,4 +23,26 @@ enum GeneradorTests {
         guard cantidad > 0 else { return barajadas }
         return Array(barajadas.prefix(cantidad))
     }
+
+    /// Preguntas para un simulacro: reparte las 20 entre TODOS los temas
+    /// (como el examen real), cogiendo una de cada tema por turnos.
+    static func simulacro(de preguntas: [Pregunta],
+                          cantidad: Int = ReglasExamen.numPreguntas) -> [Pregunta] {
+        // Agrupamos por tema y barajamos cada grupo
+        var porTema = Dictionary(grouping: preguntas, by: \.tema).mapValues { $0.shuffled() }
+        var temas = Tema.allCases.shuffled().filter { porTema[$0] != nil }
+        var resultado: [Pregunta] = []
+
+        // Ronda tras ronda: una pregunta de cada tema hasta llegar a 20
+        while resultado.count < cantidad && !temas.isEmpty {
+            for tema in temas where resultado.count < cantidad {
+                if let pregunta = porTema[tema]?.popLast() {   // saca una del tema
+                    resultado.append(pregunta)
+                }
+            }
+            // Quitamos los temas que ya se han quedado sin preguntas
+            temas = temas.filter { !(porTema[$0]?.isEmpty ?? true) }
+        }
+        return resultado.shuffled()
+    }
 }

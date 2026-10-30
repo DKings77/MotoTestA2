@@ -13,6 +13,7 @@ import SwiftUI
 
 enum EstadoOpcion {
     case normal, acierto, fallo, correctaNoElegida, apagada
+    case seleccionada   // simulacro: marcada, sin decir si es correcta
 }
 
 struct OpcionBoton: View {
@@ -71,6 +72,7 @@ struct OpcionBoton: View {
         switch estado {
         case .acierto: return Color.green.opacity(0.18)
         case .fallo: return Color.red.opacity(0.18)
+        case .seleccionada: return Color.accentColor.opacity(0.18)
         default: return Color(.secondarySystemGroupedBackground)
         }
     }
@@ -79,6 +81,7 @@ struct OpcionBoton: View {
         switch estado {
         case .acierto, .correctaNoElegida: return .green
         case .fallo: return .red
+        case .seleccionada: return .accentColor
         default: return .clear
         }
     }
@@ -87,13 +90,14 @@ struct OpcionBoton: View {
         switch estado {
         case .acierto, .correctaNoElegida: return .green
         case .fallo: return .red
+        case .seleccionada: return .accentColor
         default: return Color(.tertiarySystemFill)
         }
     }
 
     private var colorLetra: Color {
         switch estado {
-        case .acierto, .correctaNoElegida, .fallo: return .white
+        case .acierto, .correctaNoElegida, .fallo, .seleccionada: return .white
         default: return .primary
         }
     }

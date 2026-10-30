@@ -28,9 +28,12 @@ struct InicioView: View {
                     cabecera
 
                     // Cada NavigationLink indica a qué Ruta ir al pulsarlo
-                    NavigationLink(value: Ruta.simulacro) {
+                    // Simulacro: examen real, 20 preguntas repartidas por temas
+                    Button {
+                        empezarSimulacro()
+                    } label: {
                         BotonMenu(titulo: "Simulacro",
-                                  subtitulo: "20 preguntas · 20 minutos",
+                                  subtitulo: "20 preguntas · 20 min · máx. 2 fallos",
                                   icono: "stopwatch",
                                   color: .orange)
                     }
@@ -88,9 +91,20 @@ struct InicioView: View {
             }
             // Cuando "testActivo" tiene valor, se abre el test a pantalla completa
             .fullScreenCover(item: $testActivo) { config in
-                TestView(config: config)
+                if config.modo == .simulacro {
+                    SimulacroView(preguntas: config.preguntas)
+                } else {
+                    TestView(config: config)
+                }
             }
         }
+    }
+
+    /// Prepara un simulacro con preguntas de todos los temas.
+    private func empezarSimulacro() {
+        let preguntas = GeneradorTests.simulacro(de: banco.preguntas)
+        guard !preguntas.isEmpty else { return }
+        testActivo = ConfigTest(modo: .simulacro, preguntas: preguntas)
     }
 
     /// Prepara una práctica de 20 preguntas al azar de todo el banco.
