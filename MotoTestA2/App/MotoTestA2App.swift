@@ -17,9 +17,15 @@ import SwiftData
 
 @main
 struct MotoTestA2App: App {
+    // El banco de preguntas se crea UNA vez al arrancar y se comparte
+    // con todas las pantallas mediante ".environment(banco)".
+    // "@State" hace que SwiftUI lo conserve mientras la app esté abierta.
+    @State private var banco = BancoPreguntas()
+
     var body: some Scene {
         WindowGroup {
             InicioView()
+                .environment(banco)
         }
         .modelContainer(for: [
             Intento.self,

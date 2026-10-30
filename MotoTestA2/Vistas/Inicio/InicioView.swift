@@ -16,6 +16,8 @@ struct InicioView: View {
     // Lectura automática de la base de datos
     @Query private var intentos: [Intento]
     @Query private var fallos: [FalloPendiente]
+    // Banco de preguntas compartido (cargado desde el JSON)
+    @Environment(BancoPreguntas.self) private var banco
 
     var body: some View {
         NavigationStack {
@@ -89,6 +91,9 @@ struct InicioView: View {
             Text("Teórico específico de moto · Permiso A2")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
+            Text("\(banco.preguntas.count) preguntas en el banco")
+                .font(.caption)
+                .foregroundStyle(.tertiary)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 12)
@@ -99,4 +104,5 @@ struct InicioView: View {
     InicioView()
         .modelContainer(for: [Intento.self, RespuestaRegistrada.self, FalloPendiente.self],
                         inMemory: true)
+        .environment(BancoPreguntas())
 }

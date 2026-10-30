@@ -16,9 +16,30 @@ import SwiftData
 struct AjustesView: View {
     @Environment(\.modelContext) private var contexto
     @Query(sort: \Intento.fecha, order: .reverse) private var intentos: [Intento]
+    @Environment(BancoPreguntas.self) private var banco
 
     var body: some View {
         List {
+            // --- Banco de preguntas (fase 2) ---
+            Section("Banco de preguntas") {
+                LabeledContent("Origen", value: banco.origen)
+                LabeledContent("Preguntas válidas", value: "\(banco.preguntas.count)")
+                NavigationLink("Ver todas las preguntas") {
+                    BancoPreguntasView()
+                }
+            }
+
+            // Solo aparece si algo del JSON se ha descartado
+            if !banco.avisos.isEmpty {
+                Section("Avisos al cargar (\(banco.avisos.count))") {
+                    ForEach(banco.avisos, id: \.self) { aviso in
+                        Label(aviso, systemImage: "exclamationmark.triangle")
+                            .font(.footnote)
+                            .foregroundStyle(.orange)
+                    }
+                }
+            }
+
             Section {
                 Button("Añadir intento de prueba") {
                     anadirIntentoDePrueba()

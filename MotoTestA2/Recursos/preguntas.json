@@ -1,0 +1,272 @@
+[
+  {
+    "id": "nor-001",
+    "tema": "normas",
+    "enunciado": "¿Cuál es la velocidad máxima genérica de una motocicleta en autopista o autovía?",
+    "opciones": ["100 km/h.", "120 km/h.", "110 km/h."],
+    "correcta": 1,
+    "explicacion": "En autopistas y autovías las motocicletas tienen la misma velocidad máxima genérica que los turismos: 120 km/h.",
+    "imagen": null
+  },
+  {
+    "id": "nor-002",
+    "tema": "normas",
+    "enunciado": "En una vía urbana con un único carril por sentido de circulación, ¿cuál es la velocidad máxima genérica?",
+    "opciones": ["30 km/h.", "50 km/h.", "40 km/h."],
+    "correcta": 0,
+    "explicacion": "En vías urbanas de un único carril por sentido el límite genérico es 30 km/h. El de 50 km/h se aplica a vías con dos o más carriles por sentido.",
+    "imagen": null
+  },
+  {
+    "id": "nor-003",
+    "tema": "normas",
+    "enunciado": "Si una carretera tiene un arcén transitable, ¿está obligada una motocicleta a circular por él?",
+    "opciones": ["Sí, siempre que el arcén sea transitable.", "Solo de noche o con poca visibilidad.", "No; esa obligación afecta, entre otros, a ciclos y ciclomotores, no a las motocicletas."],
+    "correcta": 2,
+    "explicacion": "La obligación de circular por el arcén transitable es para ciclos, ciclomotores, vehículos de tracción animal y otros vehículos lentos. Las motocicletas circulan por la calzada.",
+    "imagen": null
+  },
+  {
+    "id": "nor-004",
+    "tema": "normas",
+    "enunciado": "Circulando con una motocicleta por una autovía sin otra señalización, ¿a qué velocidad mínima debe ir?",
+    "opciones": ["A 60 km/h.", "A 50 km/h.", "A 80 km/h."],
+    "correcta": 0,
+    "explicacion": "Salvo señalización o circunstancias que lo justifiquen, no se puede circular a menos de la mitad de la velocidad genérica de la vía. En autovía: 120 / 2 = 60 km/h.",
+    "imagen": null
+  },
+  {
+    "id": "sen-001",
+    "tema": "senalizacion",
+    "enunciado": "Al llegar a esta señal con su motocicleta, ¿qué debe hacer?",
+    "opciones": ["Detenerse solo si se acerca algún vehículo.", "Detenerse siempre en la línea de detención y ceder el paso.", "Reducir la velocidad y continuar si la vía está libre."],
+    "correcta": 1,
+    "explicacion": "La señal de STOP obliga a detenerse siempre, aunque no venga nadie, y después ceder el paso a los vehículos que circulen por la vía a la que se accede.",
+    "imagen": "senal_r2"
+  },
+  {
+    "id": "sen-002",
+    "tema": "senalizacion",
+    "enunciado": "¿Qué le obliga esta señal?",
+    "opciones": ["A ceder el paso, deteniéndose solo si es necesario.", "A detenerse siempre antes de la intersección.", "A tener prioridad sobre los vehículos que llegan por la derecha."],
+    "correcta": 0,
+    "explicacion": "La señal de ceda el paso obliga a dejar pasar a los vehículos de la otra vía. Solo hay que detenerse si es necesario para no obligarles a frenar o maniobrar.",
+    "imagen": "senal_r1"
+  },
+  {
+    "id": "sen-003",
+    "tema": "senalizacion",
+    "enunciado": "¿Puede entrar con su motocicleta en una vía en la que está colocada esta señal?",
+    "opciones": ["Sí, porque solo afecta a vehículos de cuatro ruedas.", "Sí, si circula a velocidad moderada.", "No, indica entrada prohibida a toda clase de vehículos."],
+    "correcta": 2,
+    "explicacion": "La señal de entrada prohibida (círculo rojo con franja blanca horizontal) prohíbe el acceso a todos los vehículos, motocicletas incluidas.",
+    "imagen": "senal_r101"
+  },
+  {
+    "id": "sen-004",
+    "tema": "senalizacion",
+    "enunciado": "¿Qué indica esta señal?",
+    "opciones": ["Velocidad mínima obligatoria de 50 km/h.", "Prohibido circular a más de 50 km/h.", "Velocidad recomendada de 50 km/h."],
+    "correcta": 1,
+    "explicacion": "Las señales circulares de borde rojo son de prohibición: esta prohíbe circular a una velocidad superior a 50 km/h. La velocidad mínima se indica con una señal azul y la recomendada con una cuadrada.",
+    "imagen": "senal_r301_50"
+  },
+  {
+    "id": "sen-005",
+    "tema": "senalizacion",
+    "enunciado": "¿Qué significa esta señal?",
+    "opciones": ["Fin de todas las prohibiciones señalizadas anteriormente para vehículos en movimiento.", "Fin de la autopista.", "Fin de la limitación de velocidad únicamente."],
+    "correcta": 0,
+    "explicacion": "La señal blanca con franjas diagonales negras indica el fin de todas las prohibiciones específicas impuestas antes por señales a los vehículos en movimiento.",
+    "imagen": "senal_r500"
+  },
+  {
+    "id": "seg-001",
+    "tema": "seguridad",
+    "enunciado": "¿En qué vías es obligatorio el casco para el conductor y el pasajero de una motocicleta?",
+    "opciones": ["Solo en vías interurbanas.", "En todas las vías, urbanas e interurbanas.", "Solo cuando se superan los 50 km/h."],
+    "correcta": 1,
+    "explicacion": "Conductor y pasajero de motocicleta deben llevar casco de protección homologado en cualquier vía, sea urbana o interurbana.",
+    "imagen": null
+  },
+  {
+    "id": "seg-002",
+    "tema": "seguridad",
+    "enunciado": "Su casco ha recibido un golpe fuerte en una caída, pero por fuera no se aprecian daños. ¿Qué debe hacer?",
+    "opciones": ["Seguir usándolo, porque no tiene grietas visibles.", "Sustituirlo, porque su capacidad de absorber impactos puede estar dañada.", "Usarlo solo en ciudad."],
+    "correcta": 1,
+    "explicacion": "El material interior del casco absorbe la energía deformándose. Tras un golpe fuerte puede haber perdido protección aunque por fuera parezca intacto.",
+    "imagen": null
+  },
+  {
+    "id": "seg-003",
+    "tema": "seguridad",
+    "enunciado": "¿Qué ventaja tiene que el motorista use ropa o elementos de colores claros o llamativos?",
+    "opciones": ["Ninguna, solo es estética.", "Que el resto de usuarios le vean antes y mejor.", "Que la ropa se ensucie menos."],
+    "correcta": 1,
+    "explicacion": "La motocicleta es un vehículo pequeño y poco visible. Los colores claros, llamativos o reflectantes hacen que los demás detecten antes al motorista.",
+    "imagen": null
+  },
+  {
+    "id": "seg-004",
+    "tema": "seguridad",
+    "enunciado": "Circular de noche con la pantalla del casco rayada…",
+    "opciones": ["no influye en la visión.", "mejora la visión porque filtra la luz.", "aumenta los deslumbramientos y reduce la visibilidad."],
+    "correcta": 2,
+    "explicacion": "Las rayas dispersan la luz de los faros que vienen de frente y producen destellos. Una pantalla rayada debe sustituirse.",
+    "imagen": null
+  },
+  {
+    "id": "tec-001",
+    "tema": "tecnicas",
+    "enunciado": "En una frenada en recta sobre asfalto seco, ¿cómo debe repartir la frenada?",
+    "opciones": ["Usar solo el freno trasero.", "Usar ambos frenos, aplicando la mayor parte con el delantero.", "Usar solo el freno motor."],
+    "correcta": 1,
+    "explicacion": "Al frenar, el peso se desplaza hacia delante y la rueda delantera tiene más adherencia. Por eso el freno delantero es el que más frena, combinado con el trasero.",
+    "imagen": null
+  },
+  {
+    "id": "tec-002",
+    "tema": "tecnicas",
+    "enunciado": "Al trazar una curva, ¿hacia dónde debe dirigir la mirada?",
+    "opciones": ["A la rueda delantera.", "Al borde exterior de la curva.", "Hacia la salida de la curva, por donde quiere pasar."],
+    "correcta": 2,
+    "explicacion": "La motocicleta tiende a ir hacia donde mira el conductor. Mirar hacia la salida ayuda a mantener la trayectoria y a anticipar lo que viene.",
+    "imagen": null
+  },
+  {
+    "id": "tec-003",
+    "tema": "tecnicas",
+    "enunciado": "Si frena bruscamente con la motocicleta inclinada en plena curva, lo más probable es que…",
+    "opciones": ["la moto se enderece y tienda a abrir la trayectoria.", "la moto se incline más y cierre la curva.", "no ocurra nada especial."],
+    "correcta": 0,
+    "explicacion": "Frenar inclinado endereza la moto y la saca hacia el exterior de la curva, además de reducir la adherencia disponible. Hay que frenar antes de entrar en la curva.",
+    "imagen": null
+  },
+  {
+    "id": "tec-004",
+    "tema": "tecnicas",
+    "enunciado": "Al adelantar a un ciclista con su motocicleta, ¿qué separación lateral mínima debe dejar?",
+    "opciones": ["1 metro.", "0,5 metros.", "1,5 metros."],
+    "correcta": 2,
+    "explicacion": "Para adelantar a ciclistas hay que dejar una separación lateral de al menos 1,5 metros, también cuando quien adelanta es una motocicleta.",
+    "imagen": null
+  },
+  {
+    "id": "pas-001",
+    "tema": "pasajero_carga",
+    "enunciado": "Como norma general, ¿a partir de qué edad puede viajar un pasajero en motocicleta?",
+    "opciones": ["A partir de 12 años.", "A partir de 16 años.", "A partir de 10 años."],
+    "correcta": 0,
+    "explicacion": "Con carácter general, desde los 12 años. Desde los 7 años se permite si conduce el padre, la madre, el tutor o una persona mayor de edad autorizada por ellos, y siempre con casco homologado.",
+    "imagen": null
+  },
+  {
+    "id": "pas-002",
+    "tema": "pasajero_carga",
+    "enunciado": "¿Cómo debe ir sentado el pasajero de una motocicleta?",
+    "opciones": ["De lado, para poder bajar rápido.", "A horcajadas, detrás del conductor y con los pies en los reposapiés.", "Delante del conductor si es un niño."],
+    "correcta": 1,
+    "explicacion": "El pasajero debe ir a horcajadas en el asiento, detrás del conductor y con los pies apoyados en los reposapiés laterales.",
+    "imagen": null
+  },
+  {
+    "id": "pas-003",
+    "tema": "pasajero_carga",
+    "enunciado": "En las curvas, ¿cómo debe comportarse el pasajero?",
+    "opciones": ["Inclinarse hacia el lado contrario para equilibrar la moto.", "Acompañar la inclinación del conductor, sin oponerse ni exagerarla.", "Mantenerse siempre vertical."],
+    "correcta": 1,
+    "explicacion": "El pasajero debe moverse con el conductor y la moto. Si se opone a la inclinación, desequilibra la motocicleta y dificulta el giro.",
+    "imagen": null
+  },
+  {
+    "id": "pas-004",
+    "tema": "pasajero_carga",
+    "enunciado": "Al circular con pasajero y equipaje, ¿qué debe tener en cuenta?",
+    "opciones": ["La distancia de frenado será menor.", "Que la distancia de frenado aumenta y conviene ajustar la presión de neumáticos y la suspensión según el fabricante.", "Nada, el peso no influye en una motocicleta."],
+    "correcta": 1,
+    "explicacion": "Más peso supone más inercia: la moto tarda más en frenar y su comportamiento cambia. El manual indica la presión y el ajuste de suspensión para circular cargado.",
+    "imagen": null
+  },
+  {
+    "id": "mec-001",
+    "tema": "mecanica",
+    "enunciado": "¿Cuándo debe comprobarse la presión de los neumáticos?",
+    "opciones": ["En frío, antes de iniciar la marcha.", "Después de un trayecto largo, en caliente.", "Es indiferente."],
+    "correcta": 0,
+    "explicacion": "Al rodar, el neumático se calienta y la presión sube. Las presiones indicadas por el fabricante se refieren a neumáticos en frío.",
+    "imagen": null
+  },
+  {
+    "id": "mec-002",
+    "tema": "mecanica",
+    "enunciado": "Una cadena de transmisión demasiado destensada…",
+    "opciones": ["mejora la aceleración.", "puede salirse de la corona o del piñón y bloquear la rueda.", "no supone ningún riesgo."],
+    "correcta": 1,
+    "explicacion": "Una cadena muy floja puede saltar de los dientes y bloquear la rueda trasera, además de desgastarse más. Hay que revisar su tensión y engrasarla periódicamente.",
+    "imagen": null
+  },
+  {
+    "id": "mec-003",
+    "tema": "mecanica",
+    "enunciado": "¿Por qué hay que sustituir el líquido de frenos en los plazos que indica el fabricante?",
+    "opciones": ["Porque absorbe humedad con el tiempo y pierde eficacia.", "Porque se evapora en pocas semanas.", "No es necesario sustituirlo nunca."],
+    "correcta": 0,
+    "explicacion": "El líquido de frenos absorbe humedad del ambiente. Esto baja su punto de ebullición y puede hacer que los frenos pierdan eficacia en frenadas intensas.",
+    "imagen": null
+  },
+  {
+    "id": "doc-001",
+    "tema": "documentacion",
+    "enunciado": "El permiso A2 autoriza a conducir motocicletas…",
+    "opciones": ["de cualquier potencia.", "de hasta 125 cc únicamente.", "con una potencia máxima de 35 kW y una relación potencia/peso no superior a 0,2 kW/kg."],
+    "correcta": 2,
+    "explicacion": "El A2 permite motocicletas de hasta 35 kW, con relación potencia/peso de 0,2 kW/kg como máximo, y que no deriven de una moto de más del doble de potencia.",
+    "imagen": null
+  },
+  {
+    "id": "doc-002",
+    "tema": "documentacion",
+    "enunciado": "¿Qué edad mínima se exige para obtener el permiso A2?",
+    "opciones": ["16 años.", "18 años.", "20 años."],
+    "correcta": 1,
+    "explicacion": "La edad mínima para el permiso A2 es de 18 años.",
+    "imagen": null
+  },
+  {
+    "id": "doc-003",
+    "tema": "documentacion",
+    "enunciado": "En España, con un permiso B de más de 3 años de antigüedad, ¿qué motocicletas se pueden conducir?",
+    "opciones": ["Ninguna motocicleta.", "Motocicletas de hasta 125 cc y 11 kW de potencia.", "Motocicletas de hasta 35 kW."],
+    "correcta": 1,
+    "explicacion": "El permiso B con más de 3 años de antigüedad habilita en España para conducir motocicletas de hasta 125 cc y 11 kW, pero no fuera de España.",
+    "imagen": null
+  },
+  {
+    "id": "rie-001",
+    "tema": "riesgos",
+    "enunciado": "Para un conductor de motocicleta en general (no novel ni profesional), ¿cuál es la tasa máxima de alcohol en aire espirado?",
+    "opciones": ["0,15 mg/l.", "0,50 mg/l.", "0,25 mg/l."],
+    "correcta": 2,
+    "explicacion": "La tasa general es de 0,25 mg/l en aire espirado (0,5 g/l en sangre). Para noveles y profesionales es más baja: 0,15 mg/l.",
+    "imagen": null
+  },
+  {
+    "id": "rie-002",
+    "tema": "riesgos",
+    "enunciado": "En viajes largos, ¿con qué frecuencia se recomienda descansar?",
+    "opciones": ["Cada 2 horas o 200 km aproximadamente.", "Solo al repostar.", "Cada 5 horas."],
+    "correcta": 0,
+    "explicacion": "La recomendación general es parar cada 2 horas o unos 200 km. En moto la fatiga llega antes por el viento, el ruido y la postura.",
+    "imagen": null
+  },
+  {
+    "id": "rie-003",
+    "tema": "riesgos",
+    "enunciado": "Circulando detrás o junto a un camión, ¿qué debe evitar?",
+    "opciones": ["Mantener una distancia de seguridad amplia.", "Situarse en su ángulo muerto, donde el conductor no puede verle.", "Encender la luz de cruce."],
+    "correcta": 1,
+    "explicacion": "Los vehículos grandes tienen zonas que el conductor no ve por los espejos. Una moto en el ángulo muerto puede ser arrollada en un cambio de carril o un giro.",
+    "imagen": null
+  }
+]
