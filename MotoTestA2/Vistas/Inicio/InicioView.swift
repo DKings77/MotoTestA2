@@ -18,6 +18,8 @@ struct InicioView: View {
     @Query private var fallos: [FalloPendiente]
     // Banco de preguntas compartido (cargado desde el JSON)
     @Environment(BancoPreguntas.self) private var banco
+    // Test abierto ahora mismo (nil = ninguno)
+    @State private var testActivo: ConfigTest?
 
     var body: some View {
         NavigationStack {
@@ -32,9 +34,12 @@ struct InicioView: View {
                                   icono: "stopwatch",
                                   color: .orange)
                     }
-                    NavigationLink(value: Ruta.practica) {
+                    // Práctica: abre directamente 20 preguntas al azar
+                    Button {
+                        empezarPractica()
+                    } label: {
                         BotonMenu(titulo: "Práctica",
-                                  subtitulo: "Corrección al momento, sin tiempo",
+                                  subtitulo: "20 al azar · corrección al momento",
                                   icono: "checklist",
                                   color: .blue)
                     }
@@ -75,11 +80,25 @@ struct InicioView: View {
                 switch ruta {
                 case .ajustes:
                     AjustesView()
+                case .temas:
+                    SeleccionTemasView()
                 default:
                     PantallaProximamente(titulo: ruta.titulo)
                 }
             }
+            // Cuando "testActivo" tiene valor, se abre el test a pantalla completa
+            .fullScreenCover(item: $testActivo) { config in
+                TestView(config: config)
+            }
         }
+    }
+
+    /// Prepara una práctica de 20 preguntas al azar de todo el banco.
+    private func empezarPractica() {
+        let preguntas = GeneradorTests.aleatorias(de: banco.preguntas,
+                                                  cantidad: ReglasExamen.numPreguntas)
+        guard !preguntas.isEmpty else { return }
+        testActivo = ConfigTest(modo: .practica, preguntas: preguntas)
     }
 
     /// Bloque superior con el icono y una frase.

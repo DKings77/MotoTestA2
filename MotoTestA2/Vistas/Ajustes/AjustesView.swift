@@ -41,16 +41,13 @@ struct AjustesView: View {
             }
 
             Section {
-                Button("Añadir intento de prueba") {
-                    anadirIntentoDePrueba()
-                }
-                Button("Borrar todos los intentos", role: .destructive) {
+                Button("Borrar todos los tests guardados", role: .destructive) {
                     borrarTodo()
                 }
             } header: {
-                Text("Prueba de la base de datos (fase 1)")
+                Text("Datos")
             } footer: {
-                Text("Añade unos cuantos, cierra la app del todo y vuelve a abrirla: deben seguir aquí.")
+                Text("Útil para quitar los intentos de prueba de la fase 1. No afecta a «Mis fallos».")
             }
 
             Section("Intentos guardados: \(intentos.count)") {
@@ -73,17 +70,6 @@ struct AjustesView: View {
             }
         }
         .navigationTitle("Ajustes")
-    }
-
-    /// Crea un simulacro inventado con 0–5 fallos.
-    private func anadirIntentoDePrueba() {
-        let fallos = Int.random(in: 0...5)
-        let intento = Intento(modo: .simulacro,
-                              duracionSegundos: Int.random(in: 300...ReglasExamen.duracionSegundos),
-                              numPreguntas: ReglasExamen.numPreguntas,
-                              numFallos: fallos,
-                              aprobado: fallos <= ReglasExamen.maxFallos)
-        contexto.insert(intento)
     }
 
     /// Borra todos los intentos (y en cascada sus respuestas).
