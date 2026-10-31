@@ -1179,7 +1179,8 @@
       "No es obligatorio en ninguna vía."
     ],
     "correcta": 1,
-    "explicacion": "Desde el 1 de octubre de 2026 los guantes son obligatorios en vías interurbanas para conductor y pasajero de motos y ciclomotores. No llevarlos es una infracción grave de 200 €."
+    "explicacion": "Desde el 1 de octubre de 2026 los guantes son obligatorios en vías interurbanas para conductor y pasajero de motos y ciclomotores. No llevarlos es una infracción grave de 200 €.",
+    "imagen": null
   },
   {
     "id": "tec-013",
@@ -1191,7 +1192,8 @@
       "Reducir su velocidad al menos 20 km/h por debajo del límite de la vía."
     ],
     "correcta": 2,
-    "explicacion": "La reforma de octubre de 2026 obliga a reducir al menos 20 km/h respecto al límite al adelantar ciclistas en vías interurbanas. Si hay más de un carril por sentido, hay que cambiarse completamente de carril."
+    "explicacion": "La reforma de octubre de 2026 obliga a reducir al menos 20 km/h respecto al límite al adelantar ciclistas en vías interurbanas. Si hay más de un carril por sentido, hay que cambiarse completamente de carril.",
+    "imagen": null
   },
   {
     "id": "tec-014",
@@ -1203,7 +1205,8 @@
       "Detenerse siempre detrás del vehículo."
     ],
     "correcta": 0,
-    "explicacion": "Desde octubre de 2026, al pasar junto a vehículos inmovilizados (accidente, avería, auxilio o mantenimiento) hay que dejar 1,5 m y bajar al menos 20 km/h respecto al límite."
+    "explicacion": "Desde octubre de 2026, al pasar junto a vehículos inmovilizados (accidente, avería, auxilio o mantenimiento) hay que dejar 1,5 m y bajar al menos 20 km/h respecto al límite.",
+    "imagen": null
   },
   {
     "id": "nor-013",
@@ -1215,7 +1218,8 @@
       "10 metros."
     ],
     "correcta": 1,
-    "explicacion": "La reforma de octubre de 2026 obliga a mantener al menos 5 metros de distancia con el ciclista que circula delante en el mismo carril en vías urbanas."
+    "explicacion": "La reforma de octubre de 2026 obliga a mantener al menos 5 metros de distancia con el ciclista que circula delante en el mismo carril en vías urbanas.",
+    "imagen": null
   },
   {
     "id": "nor-014",
@@ -1227,7 +1231,8 @@
       "Apartarse para dejar libre un espacio central para los servicios de emergencia."
     ],
     "correcta": 2,
-    "explicacion": "Desde octubre de 2026 existe el «carril de emergencia»: en congestiones hay que apartarse y dejar un pasillo central para policía, ambulancias y bomberos."
+    "explicacion": "Desde octubre de 2026 existe el «carril de emergencia»: en congestiones hay que apartarse y dejar un pasillo central para policía, ambulancias y bomberos.",
+    "imagen": null
   },
   {
     "id": "nor-015",
@@ -1239,6 +1244,566 @@
       "Mantener la distancia de seguridad."
     ],
     "correcta": 0,
-    "explicacion": "Con nieve que dificulte la circulación en autopistas y autovías, se prohíbe adelantar y solo puede usarse el carril derecho, dejando libre el izquierdo para emergencias y quitanieves."
+    "explicacion": "Con nieve que dificulte la circulación en autopistas y autovías, se prohíbe adelantar y solo puede usarse el carril derecho, dejando libre el izquierdo para emergencias y quitanieves.",
+    "imagen": null
+  },
+  {
+    "id": "nor-016",
+    "tema": "normas",
+    "enunciado": "En una intersección sin señalizar, usted circula por un camino de tierra y por su izquierda se acerca un vehículo por una vía pavimentada. ¿Quién tiene prioridad?",
+    "opciones": [
+      "El que llegue antes a la intersección.",
+      "El otro vehículo, porque circula por una vía pavimentada.",
+      "Usted, porque el otro vehículo se aproxima por su izquierda."
+    ],
+    "correcta": 1,
+    "explicacion": "Es una excepción a la regla de la derecha: los vehículos que circulan por una vía pavimentada tienen preferencia sobre los que proceden de una sin pavimentar.",
+    "imagen": null
+  },
+  {
+    "id": "nor-017",
+    "tema": "normas",
+    "enunciado": "El vehículo que le precede ha señalizado que va a girar a la izquierda y se ha desplazado hacia ese lado. ¿Puede adelantarle por la derecha?",
+    "opciones": [
+      "Solo si circula por una vía urbana.",
+      "Sí, si hay espacio suficiente y puede hacerlo con seguridad.",
+      "No, nunca se puede adelantar por la derecha."
+    ],
+    "correcta": 1,
+    "explicacion": "Adelantar por la derecha está permitido cuando el vehículo de delante indica claramente que va a girar a la izquierda o a parar en ese lado y deja espacio suficiente.",
+    "imagen": null
+  },
+  {
+    "id": "nor-018",
+    "tema": "normas",
+    "enunciado": "Un vehículo prioritario se acerca por detrás con las señales luminosas y acústicas en funcionamiento. ¿Qué debe hacer?",
+    "opciones": [
+      "Detenerse inmediatamente en el carril por el que circula.",
+      "Acelerar para no entorpecer su marcha.",
+      "Facilitarle el paso apartándose normalmente a la derecha y, si es necesario, detenerse."
+    ],
+    "correcta": 2,
+    "explicacion": "Hay que facilitar el paso a los vehículos prioritarios en servicio de urgencia, apartándose de forma ordenada (normalmente a la derecha) y deteniéndose si hace falta.",
+    "imagen": null
+  },
+  {
+    "id": "nor-019",
+    "tema": "normas",
+    "enunciado": "¿Qué se entiende por «parada»?",
+    "opciones": [
+      "Cualquier inmovilización con el motor apagado.",
+      "Inmovilizar el vehículo menos de 2 minutos sin que el conductor lo abandone.",
+      "Inmovilizar el vehículo menos de 5 minutos, aunque el conductor se baje."
+    ],
+    "correcta": 1,
+    "explicacion": "Parada es la inmovilización durante menos de dos minutos sin que el conductor abandone el vehículo. Si se supera ese tiempo o el conductor se va, es estacionamiento.",
+    "imagen": null
+  },
+  {
+    "id": "nor-020",
+    "tema": "normas",
+    "enunciado": "En poblado, ¿cuándo se puede usar el claxon?",
+    "opciones": [
+      "Para avisar al vehículo de delante de que va a adelantarle.",
+      "Siempre que sirva para que el tráfico sea más fluido.",
+      "Solo para evitar un posible accidente."
+    ],
+    "correcta": 2,
+    "explicacion": "En vías urbanas el claxon solo puede usarse para evitar un posible accidente. Para avisar de un adelantamiento puede usarse el destello de luces.",
+    "imagen": null
+  },
+  {
+    "id": "nor-021",
+    "tema": "normas",
+    "enunciado": "¿Cuál es la velocidad máxima de un ciclomotor?",
+    "opciones": [
+      "45 km/h.",
+      "60 km/h.",
+      "50 km/h."
+    ],
+    "correcta": 0,
+    "explicacion": "Los ciclomotores no pueden superar los 45 km/h en ningún tipo de vía.",
+    "imagen": null
+  },
+  {
+    "id": "nor-022",
+    "tema": "normas",
+    "enunciado": "¿Cuándo debe encender la luz antiniebla trasera?",
+    "opciones": [
+      "Siempre que llueva, aunque sea poco.",
+      "Siempre de noche en vías sin iluminar.",
+      "Solo en condiciones especialmente desfavorables, como niebla espesa, lluvia muy intensa o nevada."
+    ],
+    "correcta": 2,
+    "explicacion": "La antiniebla trasera es muy intensa y deslumbra o se confunde con la luz de freno. Solo se usa con niebla espesa, lluvia muy intensa, nevada o nubes densas de polvo o humo.",
+    "imagen": null
+  },
+  {
+    "id": "sen-013",
+    "tema": "senalizacion",
+    "enunciado": "¿Qué indica esta señal?",
+    "opciones": [
+      "Prohibidas la parada y el estacionamiento.",
+      "Prohibida la circulación de motocicletas.",
+      "Prohibido solo el estacionamiento."
+    ],
+    "correcta": 0,
+    "explicacion": "El disco azul con borde rojo y aspa roja prohíbe parar y estacionar en el lado de la vía en el que está colocada.",
+    "imagen": "senal_r307"
+  },
+  {
+    "id": "sen-014",
+    "tema": "senalizacion",
+    "enunciado": "¿Qué indica esta señal?",
+    "opciones": [
+      "Fin de la zona de estacionamiento limitado.",
+      "Prohibido estacionar, pero se permite la parada.",
+      "Prohibidas la parada y el estacionamiento."
+    ],
+    "correcta": 1,
+    "explicacion": "Con una sola franja roja diagonal la señal prohíbe estacionar, pero permite la parada (menos de 2 minutos sin que el conductor abandone el vehículo).",
+    "imagen": "senal_r308"
+  },
+  {
+    "id": "sen-015",
+    "tema": "senalizacion",
+    "enunciado": "¿Qué le obliga esta señal?",
+    "opciones": [
+      "A no superar los 60 km/h.",
+      "A circular como mínimo a 60 km/h.",
+      "Recomienda circular a 60 km/h."
+    ],
+    "correcta": 1,
+    "explicacion": "Las señales circulares azules son de obligación. Con una cifra indican la velocidad mínima; la máxima se indica con borde rojo.",
+    "imagen": "senal_r411_60"
+  },
+  {
+    "id": "sen-016",
+    "tema": "senalizacion",
+    "enunciado": "Junto al bordillo hay pintada una línea amarilla en zigzag. ¿Qué indica?",
+    "opciones": [
+      "Que es una zona de carga y descarga solo para motocicletas.",
+      "Que se puede estacionar un máximo de 2 minutos.",
+      "Que está prohibido estacionar porque el lugar está reservado, por ejemplo, a una parada de autobús."
+    ],
+    "correcta": 2,
+    "explicacion": "La marca amarilla en zigzag indica un lugar donde está prohibido estacionar por estar reservado para algún uso, como la parada de autobuses.",
+    "imagen": null
+  },
+  {
+    "id": "sen-017",
+    "tema": "senalizacion",
+    "enunciado": "Una línea amarilla continua pintada en el bordillo indica…",
+    "opciones": [
+      "que están prohibidas la parada y el estacionamiento.",
+      "que solo está prohibido el estacionamiento.",
+      "que solo pueden estacionar motocicletas."
+    ],
+    "correcta": 0,
+    "explicacion": "Línea amarilla continua: prohibido parar y estacionar. Línea amarilla discontinua: prohibido estacionar.",
+    "imagen": null
+  },
+  {
+    "id": "sen-018",
+    "tema": "senalizacion",
+    "enunciado": "En una zona de obras, las marcas viales amarillas contradicen a las blancas. ¿Cuáles debe seguir?",
+    "opciones": [
+      "Las amarillas.",
+      "Las blancas, porque son las permanentes.",
+      "Las que sean continuas, sean del color que sean."
+    ],
+    "correcta": 0,
+    "explicacion": "Las marcas amarillas de obras son provisionales y prevalecen sobre las blancas mientras duran las obras.",
+    "imagen": null
+  },
+  {
+    "id": "sen-019",
+    "tema": "senalizacion",
+    "enunciado": "¿Qué indica un semáforo con la luz amarilla intermitente?",
+    "opciones": [
+      "Que el semáforo está averiado y usted tiene prioridad.",
+      "Que debe extremar la precaución y, si es necesario, ceder el paso.",
+      "Que debe detenerse siempre, como con la luz roja."
+    ],
+    "correcta": 1,
+    "explicacion": "La luz amarilla intermitente obliga a extremar la precaución y ceder el paso si procede, por ejemplo a los peatones.",
+    "imagen": null
+  },
+  {
+    "id": "sen-020",
+    "tema": "senalizacion",
+    "enunciado": "En el carril aparece una flecha curvada pintada que apunta hacia la derecha, junto a una línea discontinua. ¿Qué indica?",
+    "opciones": [
+      "Que el carril se termina y debe girar a la derecha.",
+      "Que puede cambiar de carril libremente.",
+      "Que se aproxima una línea continua y debe volver a su carril."
+    ],
+    "correcta": 2,
+    "explicacion": "Es la flecha de retorno: avisa de que la línea va a pasar a ser continua y que debe volver al carril de la derecha.",
+    "imagen": null
+  },
+  {
+    "id": "seg-013",
+    "tema": "seguridad",
+    "enunciado": "Tras un accidente, encuentra a un motorista herido y consciente con el casco puesto. Como norma general, ¿qué debe hacer con el casco?",
+    "opciones": [
+      "Quitárselo enseguida para que respire mejor.",
+      "No quitárselo, salvo que sea imprescindible para que pueda respirar.",
+      "Quitárselo para comprobar si tiene heridas en la cabeza."
+    ],
+    "correcta": 1,
+    "explicacion": "Retirar el casco puede agravar una lesión de cuello o columna. Solo se quita si es imprescindible, por ejemplo porque no respira o vomita.",
+    "imagen": null
+  },
+  {
+    "id": "seg-014",
+    "tema": "seguridad",
+    "enunciado": "Ante un accidente, ¿cuál es el orden correcto de actuación?",
+    "opciones": [
+      "Proteger, avisar y socorrer.",
+      "Socorrer, avisar y proteger.",
+      "Avisar, socorrer y proteger."
+    ],
+    "correcta": 0,
+    "explicacion": "Es la conducta PAS: primero proteger la zona para evitar más accidentes, después avisar al 112 y, por último, socorrer a los heridos.",
+    "imagen": null
+  },
+  {
+    "id": "seg-015",
+    "tema": "seguridad",
+    "enunciado": "¿Por qué conviene sustituir el casco con el paso de los años, aunque no haya recibido golpes?",
+    "opciones": [
+      "Porque la homologación cambia cada año.",
+      "Porque lo exige la ITV de la moto.",
+      "Porque sus materiales se degradan con el tiempo y pierde capacidad de protección."
+    ],
+    "correcta": 2,
+    "explicacion": "El sol, el sudor y el paso del tiempo degradan la calota y el material interior. El fabricante indica la vida útil aproximada.",
+    "imagen": null
+  },
+  {
+    "id": "tec-015",
+    "tema": "tecnicas",
+    "enunciado": "Si duplica la velocidad, la distancia de frenado…",
+    "opciones": [
+      "se multiplica aproximadamente por cuatro.",
+      "se duplica.",
+      "se mantiene igual si los frenos están en buen estado."
+    ],
+    "correcta": 0,
+    "explicacion": "La distancia de frenado aumenta con el cuadrado de la velocidad: al doble de velocidad, unas cuatro veces más metros para frenar.",
+    "imagen": null
+  },
+  {
+    "id": "tec-016",
+    "tema": "tecnicas",
+    "enunciado": "Circulando a 90 km/h, ¿cuántos metros recorre aproximadamente durante un segundo de tiempo de reacción?",
+    "opciones": [
+      "Unos 50 metros.",
+      "Unos 25 metros.",
+      "Unos 9 metros."
+    ],
+    "correcta": 1,
+    "explicacion": "90 km/h equivalen a 25 metros por segundo (90 ÷ 3,6). En ese tiempo todavía no ha empezado a frenar.",
+    "imagen": null
+  },
+  {
+    "id": "tec-017",
+    "tema": "tecnicas",
+    "enunciado": "Al frenar fuerte con ABS nota vibraciones en la maneta. ¿Qué debe hacer?",
+    "opciones": [
+      "Soltar el freno y volver a frenar a golpes.",
+      "Dejar de frenar, porque indican una avería.",
+      "Mantener la presión sobre el freno: las vibraciones son normales."
+    ],
+    "correcta": 2,
+    "explicacion": "Las pulsaciones son el ABS actuando para evitar que la rueda se bloquee. Hay que seguir frenando con firmeza.",
+    "imagen": null
+  },
+  {
+    "id": "tec-018",
+    "tema": "tecnicas",
+    "enunciado": "En una motocicleta con sistema de frenada combinada (CBS), al accionar el freno trasero…",
+    "opciones": [
+      "también actúa en parte el freno delantero.",
+      "se desconecta el ABS.",
+      "solo frena la rueda trasera."
+    ],
+    "correcta": 0,
+    "explicacion": "El CBS reparte la frenada: al accionar un mando actúan los dos frenos, lo que ayuda a frenar de forma más equilibrada.",
+    "imagen": null
+  },
+  {
+    "id": "tec-019",
+    "tema": "tecnicas",
+    "enunciado": "En una curva a la izquierda, ¿por qué no conviene trazar pegado a la línea central?",
+    "opciones": [
+      "Porque la moto tiende a ir hacia el exterior.",
+      "Porque está prohibido acercarse a la línea en las curvas.",
+      "Porque, al inclinar, la cabeza y el cuerpo pueden invadir el carril contrario."
+    ],
+    "correcta": 2,
+    "explicacion": "Al inclinarse, el cuerpo del motorista sobresale de la vertical de las ruedas. Pegado a la línea, podría ser golpeado por un vehículo que viene de frente.",
+    "imagen": null
+  },
+  {
+    "id": "tec-020",
+    "tema": "tecnicas",
+    "enunciado": "Antes de cambiar de carril, además de mirar por los espejos, ¿qué es recomendable?",
+    "opciones": [
+      "Tocar el claxon.",
+      "Girar la cabeza para comprobar el ángulo muerto.",
+      "Encender la luz de carretera."
+    ],
+    "correcta": 1,
+    "explicacion": "Los espejos no cubren toda la zona lateral. Un vistazo rápido por encima del hombro confirma que no hay nadie en el ángulo muerto.",
+    "imagen": null
+  },
+  {
+    "id": "tec-021",
+    "tema": "tecnicas",
+    "enunciado": "Tiene que frenar de emergencia en plena curva. ¿Qué es lo más adecuado?",
+    "opciones": [
+      "Frenar fuerte solo con el delantero, manteniendo la inclinación.",
+      "Enderezar la moto y frenar con más fuerza a medida que se pone vertical.",
+      "Inclinar más la moto y no frenar."
+    ],
+    "correcta": 1,
+    "explicacion": "Con la moto inclinada hay menos adherencia disponible para frenar. Al enderezarla se puede aplicar más freno sin perder el control.",
+    "imagen": null
+  },
+  {
+    "id": "pas-011",
+    "tema": "pasajero_carga",
+    "enunciado": "Al llevar pasajero o carga pesada, ¿qué debe comprobar en el alumbrado?",
+    "opciones": [
+      "Nada, porque el peso no influye en el alumbrado.",
+      "Que la luz de freno parpadee.",
+      "La altura del faro, para no deslumbrar a otros conductores."
+    ],
+    "correcta": 2,
+    "explicacion": "Con peso detrás, la parte trasera baja y el faro apunta más alto. Hay que ajustar su altura o la precarga de la suspensión.",
+    "imagen": null
+  },
+  {
+    "id": "pas-012",
+    "tema": "pasajero_carga",
+    "enunciado": "¿Puede llevar a un niño sentado delante de usted, entre su cuerpo y el manillar?",
+    "opciones": [
+      "No, en ningún caso.",
+      "Sí, si tiene menos de 7 años.",
+      "Sí, en vía urbana y con casco homologado."
+    ],
+    "correcta": 0,
+    "explicacion": "El pasajero debe ir siempre detrás del conductor. Nunca puede situarse entre el conductor y el manillar.",
+    "imagen": null
+  },
+  {
+    "id": "pas-013",
+    "tema": "pasajero_carga",
+    "enunciado": "Respecto a los reposapiés, ¿qué debe poder hacer el pasajero?",
+    "opciones": [
+      "Nada, si va bien sujeto al conductor.",
+      "Apoyar los pies en ellos durante el trayecto.",
+      "Alcanzarlos solo cuando la moto se detiene."
+    ],
+    "correcta": 1,
+    "explicacion": "El pasajero debe ir a horcajadas y con los pies apoyados en los reposapiés laterales. Si no llega a ellos, no puede viajar con seguridad.",
+    "imagen": null
+  },
+  {
+    "id": "mec-012",
+    "tema": "mecanica",
+    "enunciado": "Al acelerar, el motor sube de vueltas pero la moto apenas gana velocidad. ¿Qué puede indicar?",
+    "opciones": [
+      "Que el embrague patina.",
+      "Que los neumáticos tienen demasiada presión.",
+      "Que la cadena está demasiado tensa."
+    ],
+    "correcta": 0,
+    "explicacion": "Si el embrague patina, no transmite toda la fuerza del motor a la rueda: el motor sube de vueltas pero la moto no responde.",
+    "imagen": null
+  },
+  {
+    "id": "mec-013",
+    "tema": "mecanica",
+    "enunciado": "En comparación con la cadena, la transmisión por cardán…",
+    "opciones": [
+      "debe tensarse con frecuencia.",
+      "debe engrasarse cada 500 km.",
+      "necesita menos mantenimiento."
+    ],
+    "correcta": 2,
+    "explicacion": "El cardán va cerrado y lubricado. No necesita ser engrasado ni tensado como la cadena.",
+    "imagen": null
+  },
+  {
+    "id": "mec-014",
+    "tema": "mecanica",
+    "enunciado": "La maneta del freno delantero llega casi al puño y tiene un tacto esponjoso. ¿Qué puede ocurrir?",
+    "opciones": [
+      "Que haya aire en el circuito o el líquido de frenos esté en mal estado.",
+      "Que las pastillas sean nuevas.",
+      "Que los neumáticos estén fríos."
+    ],
+    "correcta": 0,
+    "explicacion": "Un tacto esponjoso indica que la presión no se transmite bien. Hay que revisar los frenos antes de seguir circulando.",
+    "imagen": null
+  },
+  {
+    "id": "mec-015",
+    "tema": "mecanica",
+    "enunciado": "Una cadena de transmisión demasiado tensa…",
+    "opciones": [
+      "mejora la estabilidad en curva.",
+      "puede romperse y desgasta en exceso piñones y rodamientos.",
+      "reduce el consumo de combustible."
+    ],
+    "correcta": 1,
+    "explicacion": "La cadena necesita una holgura mínima para el movimiento de la suspensión. Demasiado tensa, sufre ella y los elementos de la transmisión.",
+    "imagen": null
+  },
+  {
+    "id": "doc-012",
+    "tema": "documentacion",
+    "enunciado": "Tiene el permiso B desde hace 8 años y 15 puntos. Al obtener el A2, ¿con cuántos puntos se queda?",
+    "opciones": [
+      "Con 12 puntos.",
+      "Con 8 puntos, por ser nuevo en moto.",
+      "Con sus 15 puntos."
+    ],
+    "correcta": 2,
+    "explicacion": "El saldo de puntos es único para cada conductor y no cambia al obtener una nueva clase de permiso. El saldo inicial de 8 puntos es para quien obtiene su primer permiso.",
+    "imagen": null
+  },
+  {
+    "id": "doc-013",
+    "tema": "documentacion",
+    "enunciado": "¿Cuál es el saldo máximo de puntos que puede tener un conductor?",
+    "opciones": [
+      "20 puntos.",
+      "12 puntos.",
+      "15 puntos."
+    ],
+    "correcta": 2,
+    "explicacion": "Se parte de 12 puntos (8 para los noveles) y se pueden acumular bonificaciones por buena conducción hasta un máximo de 15.",
+    "imagen": null
+  },
+  {
+    "id": "doc-014",
+    "tema": "documentacion",
+    "enunciado": "Si paga una multa de tráfico dentro de los 20 días naturales siguientes a la notificación, ¿qué ocurre?",
+    "opciones": [
+      "Obtiene una reducción del 50 % del importe.",
+      "No hay reducción salvo en infracciones leves.",
+      "Obtiene una reducción del 25 % del importe."
+    ],
+    "correcta": 0,
+    "explicacion": "El pago voluntario en 20 días naturales reduce la multa a la mitad, aunque supone renunciar a presentar alegaciones.",
+    "imagen": null
+  },
+  {
+    "id": "doc-015",
+    "tema": "documentacion",
+    "enunciado": "Si su moto obtiene un resultado desfavorable en la ITV, ¿de qué plazo dispone para reparar los defectos y volver a la inspección?",
+    "opciones": [
+      "15 días.",
+      "2 meses.",
+      "6 meses."
+    ],
+    "correcta": 1,
+    "explicacion": "Con resultado desfavorable hay dos meses para corregir los defectos y volver. Si es negativo, la moto solo puede ir al taller y a la ITV.",
+    "imagen": null
+  },
+  {
+    "id": "doc-016",
+    "tema": "documentacion",
+    "enunciado": "Si circula con una motocicleta que no tiene el seguro obligatorio, además de la multa…",
+    "opciones": [
+      "solo pierde 2 puntos del permiso.",
+      "no ocurre nada si no ha tenido un accidente.",
+      "el vehículo puede ser inmovilizado."
+    ],
+    "correcta": 2,
+    "explicacion": "Circular sin seguro obligatorio es una infracción grave, con multa elevada, y los agentes pueden inmovilizar el vehículo.",
+    "imagen": null
+  },
+  {
+    "id": "doc-017",
+    "tema": "documentacion",
+    "enunciado": "Si ha perdido algún punto, ¿cuándo recupera el saldo inicial de 12 puntos sin hacer ningún curso?",
+    "opciones": [
+      "Tras 2 años sin cometer infracciones que resten puntos.",
+      "Tras 6 meses sin infracciones.",
+      "Tras 5 años sin infracciones."
+    ],
+    "correcta": 0,
+    "explicacion": "Desde la reforma de 2022, el plazo para recuperar los 12 puntos es de 2 años sin infracciones que conlleven pérdida de puntos, sea cual sea su gravedad.",
+    "imagen": null
+  },
+  {
+    "id": "doc-018",
+    "tema": "documentacion",
+    "enunciado": "¿Puede conducir con el A2 una motocicleta de 100 kW limitada a 35 kW?",
+    "opciones": [
+      "Sí, porque ya está limitada a 35 kW.",
+      "No, porque deriva de una moto de más del doble de 35 kW.",
+      "Sí, si la limitación consta en su documentación."
+    ],
+    "correcta": 1,
+    "explicacion": "Con el A2, una moto limitada a 35 kW solo vale si su potencia original no supera el doble, es decir, 70 kW.",
+    "imagen": null
+  },
+  {
+    "id": "rie-012",
+    "tema": "riesgos",
+    "enunciado": "Un conductor (ni novel ni profesional) da 0,40 mg/l de alcohol en aire espirado. ¿Qué sanción le corresponde?",
+    "opciones": [
+      "Multa de 500 € y pérdida de 4 puntos.",
+      "Ninguna, porque no supera el límite.",
+      "Multa de 1.000 € y pérdida de 6 puntos."
+    ],
+    "correcta": 0,
+    "explicacion": "Entre 0,25 y 0,50 mg/l la sanción es de 500 € y 4 puntos. Por encima de 0,50 mg/l, 1.000 € y 6 puntos.",
+    "imagen": null
+  },
+  {
+    "id": "rie-013",
+    "tema": "riesgos",
+    "enunciado": "¿A partir de qué tasa de alcohol en aire espirado se comete un delito?",
+    "opciones": [
+      "Más de 0,40 mg/l.",
+      "Más de 0,25 mg/l.",
+      "Más de 0,60 mg/l."
+    ],
+    "correcta": 2,
+    "explicacion": "Superar 0,60 mg/l en aire espirado (1,2 g/l en sangre) es delito contra la seguridad vial, sea cual sea el tipo de conductor.",
+    "imagen": null
+  },
+  {
+    "id": "rie-014",
+    "tema": "riesgos",
+    "enunciado": "Entra de día en un túnel poco iluminado. ¿Qué le ocurre a la vista?",
+    "opciones": [
+      "Ve mejor que en el exterior porque no hay reflejos.",
+      "Tarda unos segundos en adaptarse a la oscuridad, por lo que conviene reducir la velocidad antes de entrar.",
+      "Se adapta de forma instantánea."
+    ],
+    "correcta": 1,
+    "explicacion": "El ojo tarda más en adaptarse de la luz a la oscuridad que al revés. Durante esos segundos se ve mucho peor.",
+    "imagen": null
+  },
+  {
+    "id": "rie-015",
+    "tema": "riesgos",
+    "enunciado": "¿Cómo afecta la fatiga al tiempo de reacción?",
+    "opciones": [
+      "No le afecta si conoce bien la carretera.",
+      "Lo aumenta.",
+      "Lo reduce, porque el conductor va más relajado."
+    ],
+    "correcta": 1,
+    "explicacion": "Con fatiga se tarda más en percibir el peligro y en reaccionar, lo que alarga la distancia que se recorre antes de frenar.",
+    "imagen": null
   }
 ]

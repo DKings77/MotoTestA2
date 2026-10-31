@@ -2,24 +2,23 @@
 // ------------------------------------------------------------------
 // Pantalla de inicio con los 5 botones principales.
 //
-// - "NavigationStack" es el contenedor que permite ir a otras pantallas
-//   y volver con el botón "atrás".
-// - "@Query" lee datos de SwiftData y se actualiza SOLO cuando cambian.
-//   Aquí lo usamos para mostrar cuántos tests y fallos hay guardados.
-// - Los botones están en la parte inferior para llegar con el pulgar.
+// - "NavigationStack" permite ir a otras pantallas y volver.
+// - "@Query" lee SwiftData y se actualiza solo cuando cambian los datos.
+// - Simulacro y Práctica se abren a pantalla completa (fullScreenCover);
+//   Por temas, Mis fallos y Estadísticas se abren dentro de la navegación.
 // ------------------------------------------------------------------
 
 import SwiftUI
 import SwiftData
 
 struct InicioView: View {
-    // Lectura automática de la base de datos
     @Query private var intentos: [Intento]
     @Query private var fallos: [FalloPendiente]
-    // Banco de preguntas compartido (cargado desde el JSON)
     @Environment(BancoPreguntas.self) private var banco
-    // Test abierto ahora mismo (nil = ninguno)
-    @State private var testActivo: ConfigTest?
+    @State private var testActivo: ConfigTest?   // test abierto (nil = ninguno)
+
+    private var simulacros: [Intento] { intentos.filter { $0.modo == .simulacro } }
+    private var aprobados: Int { simulacros.filter { $0.aprobado == true }.count }
 
     var body: some View {
         NavigationStack {
@@ -27,8 +26,6 @@ struct InicioView: View {
                 VStack(spacing: 14) {
                     cabecera
 
-                    // Cada NavigationLink indica a qué Ruta ir al pulsarlo
-                    // Simulacro: examen real, 20 preguntas repartidas por temas
                     Button {
                         empezarSimulacro()
                     } label: {
@@ -37,7 +34,6 @@ struct InicioView: View {
                                   icono: "stopwatch",
                                   color: .orange)
                     }
-                    // Práctica: abre directamente 20 preguntas al azar
                     Button {
                         empezarPractica()
                     } label: {
@@ -54,13 +50,15 @@ struct InicioView: View {
                     }
                     NavigationLink(value: Ruta.fallos) {
                         BotonMenu(titulo: "Mis fallos",
-                                  subtitulo: "\(fallos.count) pendientes de repasar",
+                                  subtitulo: fallos.isEmpty ? "Nada pendiente 👌" : "\(fallos.count) pendientes de repasar",
                                   icono: "xmark.circle",
                                   color: .red)
                     }
                     NavigationLink(value: Ruta.estadisticas) {
                         BotonMenu(titulo: "Estadísticas",
-                                  subtitulo: "\(intentos.count) tests realizados",
+                                  subtitulo: simulacros.isEmpty
+                                    ? "\(intentos.count) tests realizados"
+                                    : "\(aprobados) de \(simulacros.count) simulacros aprobados",
                                   icono: "chart.bar",
                                   color: .green)
                     }
@@ -71,25 +69,21 @@ struct InicioView: View {
             .background(Color(.systemGroupedBackground))
             .navigationTitle("MotoTest A2")
             .toolbar {
-                // Rueda de ajustes arriba a la derecha
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink(value: Ruta.ajustes) {
                         Image(systemName: "gearshape")
                     }
                 }
             }
-            // Qué pantalla abrir para cada ruta
             .navigationDestination(for: Ruta.self) { ruta in
                 switch ruta {
-                case .ajustes:
-                    AjustesView()
-                case .temas:
-                    SeleccionTemasView()
-                default:
-                    PantallaProximamente(titulo: ruta.titulo)
+                case .ajustes:      AjustesView()
+                case .temas:        SeleccionTemasView()
+                case .fallos:       MisFallosView()
+                case .estadisticas: EstadisticasView()
+                case .simulacro, .practica: EmptyView()   // se abren a pantalla completa
                 }
             }
-            // Cuando "testActivo" tiene valor, se abre el test a pantalla completa
             .fullScreenCover(item: $testActivo) { config in
                 if config.modo == .simulacro {
                     SimulacroView(preguntas: config.preguntas)
@@ -100,22 +94,7 @@ struct InicioView: View {
         }
     }
 
-    /// Prepara un simulacro con preguntas de todos los temas.
-    private func empezarSimulacro() {
-        let preguntas = GeneradorTests.simulacro(de: banco.preguntas)
-        guard !preguntas.isEmpty else { return }
-        testActivo = ConfigTest(modo: .simulacro, preguntas: preguntas)
-    }
-
-    /// Prepara una práctica de 20 preguntas al azar de todo el banco.
-    private func empezarPractica() {
-        let preguntas = GeneradorTests.aleatorias(de: banco.preguntas,
-                                                  cantidad: ReglasExamen.numPreguntas)
-        guard !preguntas.isEmpty else { return }
-        testActivo = ConfigTest(modo: .practica, preguntas: preguntas)
-    }
-
-    /// Bloque superior con el icono y una frase.
+    /// Bloque superior: icono, nº de preguntas y aviso de caducidad.
     private var cabecera: some View {
         VStack(spacing: 8) {
             Image(systemName: "steeringwheel")
@@ -127,9 +106,32 @@ struct InicioView: View {
             Text("\(banco.preguntas.count) preguntas en el banco")
                 .font(.caption)
                 .foregroundStyle(.tertiary)
+
+            if let dias = CaducidadApp.diasRestantes {
+                Label(dias == 0 ? "La instalación caduca hoy: reinstala con Sideloadly"
+                                : "Instalación válida \(dias) \(dias == 1 ? "día" : "días") más",
+                      systemImage: "clock.arrow.circlepath")
+                    .font(.caption)
+                    .foregroundStyle(dias <= 1 ? Color.orange : Color.secondary)
+            }
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 12)
+    }
+
+    /// Simulacro con preguntas repartidas entre todos los temas.
+    private func empezarSimulacro() {
+        let preguntas = GeneradorTests.simulacro(de: banco.preguntas)
+        guard !preguntas.isEmpty else { return }
+        testActivo = ConfigTest(modo: .simulacro, preguntas: preguntas)
+    }
+
+    /// Práctica de 20 preguntas al azar de todo el banco.
+    private func empezarPractica() {
+        let preguntas = GeneradorTests.aleatorias(de: banco.preguntas,
+                                                  cantidad: ReglasExamen.numPreguntas)
+        guard !preguntas.isEmpty else { return }
+        testActivo = ConfigTest(modo: .practica, preguntas: preguntas)
     }
 }
 

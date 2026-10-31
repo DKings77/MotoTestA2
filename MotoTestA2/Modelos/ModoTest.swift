@@ -33,4 +33,5 @@ enum ReglasExamen {
     static let aciertosParaSalirDeFallos = 2  // aciertos seguidos para sacar una pregunta del repaso
     static let simulacrosParaEstarListo = 5   // indicador "¿Estoy listo?"
     static let aciertoMinimoPorTema = 0.85    // 85 % en cada tema
+    static let minimoRespuestasPorTema = 10   // respuestas mínimas para fiarse del % de un tema
 }
